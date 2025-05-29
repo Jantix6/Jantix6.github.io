@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && git worktree add gh-pages origin/gh-pages && rm -rf gh-pages/* && cp -r dist/* gh-pages/ && git -C gh-pages add . && git -C gh-pages commit -m \"Deploy from main\" && git -C gh-pages push origin gh-pages && git worktree remove gh-pages"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
