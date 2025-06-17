@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 
@@ -28,10 +27,10 @@ const HeroSection = ({ onViewProjects, onContactClick }: HeroSectionProps) => {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-6 sm:mb-8">
-                <Button onClick={onViewProjects} className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto">
+                <Button onClick={onViewProjects} className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto border-2 border-purple-500 hover:border-purple-400 shadow-lg shadow-purple-600/30">
                   View Projects
                 </Button>
-                <Button onClick={onContactClick} variant="outline" className="border-purple-400 text-purple-300 hover:bg-purple-600 hover:text-white px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto">
+                <Button onClick={onContactClick} className="bg-slate-700 hover:bg-slate-600 text-white border-2 border-slate-500 hover:border-slate-400 px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto shadow-lg">
                   Contact Me
                 </Button>
               </div>
@@ -51,9 +50,6 @@ const HeroSection = ({ onViewProjects, onContactClick }: HeroSectionProps) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="text-purple-300" size={24} />
       </div>
     </section>
   );

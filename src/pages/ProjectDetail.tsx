@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -53,7 +52,6 @@ const ProjectDetail = () => {
       <ProjectHero project={project} onExternalLink={handleExternalLink} />
       <ProjectTechnologies project={project} />
       <ProjectGallery project={project} />
-      <ProjectNavigation currentProjectId={id!} />
       <ProjectFooter />
     </div>
   );

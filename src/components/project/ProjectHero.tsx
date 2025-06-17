@@ -29,8 +29,7 @@ const ProjectHero = ({ project, onExternalLink }: ProjectHeroProps) => {
               <div className="flex gap-4">
                 <Button 
                   onClick={onExternalLink}
-                  variant="outline" 
-                  className="border-purple-400 text-purple-300 hover:bg-purple-600 hover:text-white"
+                  className="bg-purple-600 hover:bg-purple-700 text-white border-2 border-purple-500 hover:border-purple-400 shadow-lg shadow-purple-600/30"
                 >
                   {'videoUrl' in project ? (
                     <>

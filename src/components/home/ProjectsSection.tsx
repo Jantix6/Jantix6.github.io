@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
@@ -8,10 +9,10 @@ const ProjectsSection = () => {
     {
       id: "lethal-honor",
       title: "Lethal Honor - Order of the Apocalypse",
-      description: "Lethal Honor - Order of the Apocalypse is a challenging hack 'n' slash roguelite featuring demonic creatures, fast-paced melee combat, and powerful abilities. Become part of a secret organization investigating the paranormal and fighting for humanity's survival.",
+      description: "A challenging hack 'n' slash roguelite featuring demonic creatures, fast-paced melee combat, and powerful abilities. Join a secret organization fighting for humanity's survival.",
       image: "/lovable-uploads/ae1f792a-d1b3-4710-a5bd-911ebd381702.png",
       technologies: ["Unity", "C#"],
-      category: "Action Roguelike",
+      category: "Action Roguelite",
       year: "2025",
       status: "In Development",
       steamUrl: "https://store.steampowered.com/app/1266060/Lethal_Honor__Order_of_the_Apocalypse/"
@@ -45,8 +46,8 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Featured Projects</h2>
-          <p className="text-purple-200 text-base sm:text-lg max-w-2xl mx-auto">
-            Explore some of my latest game development projects showcasing different genres
+          <p className="text-purple-200 text-base sm:text-lg max-w-4xl mx-auto">
+            A selection of professional and personal works showcasing my skills and development approach
           </p>
         </div>
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">

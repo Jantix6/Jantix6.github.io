@@ -1,95 +1,44 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Albert Pujante - Game Developer Portfolio | Unity & C# Expert</title>
-    <meta name="description" content="Professional game developer Albert Pujante specializing in Unity, C#, and innovative gaming experiences. Explore my portfolio featuring party games, 2D platformers, and interactive applications." />
-    <meta name="author" content="Albert Pujante" />
-    <meta name="keywords" content="Albert Pujante, game developer, Unity developer, C# programmer, game programming, indie games, 2D platformer, party games, mobile games, game design, portfolio" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="en" />
-    <meta name="revisit-after" content="7 days" />
-
-    <!-- Security headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.gpteng.co; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src 'none'; object-src 'none';" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://albertpujante.dev/" />
-    <meta property="og:title" content="Albert Pujante - Game Developer Portfolio" />
-    <meta property="og:description" content="Professional game developer specializing in Unity, C#, and innovative gaming experiences. Explore my portfolio featuring party games and 2D platformers." />
-    <meta property="og:image" content="https://11b1a299-4c09-46d4-a0f6-5663deee39e4.lovableproject.com/lovable-uploads/895bb5b2-bf10-422c-8532-a6f330b6badc.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Albert Pujante - Game Developer" />
-    <meta property="og:site_name" content="Albert Pujante Portfolio" />
-    <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://albertpujante.dev/" />
-    <meta name="twitter:title" content="Albert Pujante - Game Developer Portfolio" />
-    <meta name="twitter:description" content="Professional game developer specializing in Unity, C#, and innovative gaming experiences" />
-    <meta name="twitter:image" content="https://11b1a299-4c09-46d4-a0f6-5663deee39e4.lovableproject.com/lovable-uploads/895bb5b2-bf10-422c-8532-a6f330b6badc.png" />
-    <meta name="twitter:image:alt" content="Albert Pujante - Game Developer" />
-    <meta name="twitter:creator" content="@albertpujante" />
-
-    <!-- Additional SEO -->
-    <link rel="canonical" href="https://albertpujante.dev/" />
-    <meta name="theme-color" content="#7c3aed" />
-    <meta name="msapplication-TileColor" content="#7c3aed" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Albert Pujante" />
-
-    <!-- Favicon and icons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
-
-    <!-- Preconnect to external domains for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albert Pujante - Game Developer Portfolio</title>
     
-    <!-- DNS prefetch for external resources -->
-    <link rel="dns-prefetch" href="//github.com" />
-    <link rel="dns-prefetch" href="//linkedin.com" />
-    <link rel="dns-prefetch" href="//youtube.com" />
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Albert Pujante",
-      "jobTitle": "Game Developer",
-      "description": "Professional game developer specializing in Unity, C#, and innovative gaming experiences",
-      "url": "https://albertpujante.dev",
-      "sameAs": [
-        "https://github.com/Jantix6",
-        "https://www.linkedin.com/in/albertpujante"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Freelance Game Developer"
-      },
-      "knowsAbout": ["Unity", "C#", "Game Development", "Mobile Development", "2D Platformers", "Party Games"]
-    }
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' && l.search.length > 2) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          
+          // Only process if it's a valid route format
+          if (decoded.startsWith('/')) {
+            var newPath = decoded.split('?')[0];
+            var newSearch = decoded.includes('?') ? '?' + decoded.split('?').slice(1).join('?') : '';
+            
+            window.history.replaceState(null, null, newPath + newSearch + l.hash);
+          }
+        }
+      }(window.location))
     </script>
+    <!-- End Single Page Apps for GitHub Pages -->
   </head>
-
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

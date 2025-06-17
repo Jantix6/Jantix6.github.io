@@ -2,7 +2,7 @@
 export const projectsData = {
   "lethal-honor": {
     title: "Lethal Honor - Order of the Apocalypse",
-    subtitle: "Action Roguelike Game",
+    subtitle: "Action Roguelite Game",
     description: "Lethal Honor - Order of the Apocalypse is a challenging hack 'n' slash roguelite featuring demonic creatures, fast-paced melee combat, and powerful abilities. Become part of a secret organization investigating the paranormal and fighting for humanity's survival.",
     longDescription: `
       Currently in development with an estimated launch in 2025, Lethal Honor - Order of the Apocalypse is an intense action roguelike that combines fast-paced hack 'n' slash combat with challenging roguelite mechanics. Players take on the role of operatives in a secret organization dedicated to investigating paranormal activities and fighting for humanity's survival against demonic forces.
@@ -12,8 +12,8 @@ export const projectsData = {
       The project focuses on creating engaging moment-to-moment gameplay with meaningful progression systems and replayability through procedural elements and character builds.
     `,
     image: "/lovable-uploads/ae1f792a-d1b3-4710-a5bd-911ebd381702.png",
-    technologies: ["Unity", "C#", "UI/UX"],
-    category: "Action Roguelike",
+    technologies: ["Unity", "C#", "UI/UX", "Procedural Generation", "Singleplayer", "Team Collaboration"],
+    category: "Action Roguelite",
     year: "2025",
     status: "In Development",
     gallery: [
@@ -47,7 +47,7 @@ export const projectsData = {
       As a programmer in a team of 5 (2 programmers, 2 artists, and 1 designer), I focused on implementing the multiplayer systems, player abilities, environmental interactions, and the dynamic event system that makes each match unique. The game emphasizes accessibility and fun, making it perfect for family gatherings and friend sessions.
     `,
     image: "/lovable-uploads/3818d107-d2a8-4612-b336-188661771c2b.png",
-    technologies: ["Unity 2D", "C#", "Local Multiplayer", "Game Design", "UI/UX", "Team Development"],
+    technologies: ["Unity 2D", "C#", "Local Multiplayer", "Game Design", "UI/UX", "Team Collaboration"],
     category: "Party Game",
     year: "2019",
     status: "Released",
