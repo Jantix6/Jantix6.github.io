@@ -15,21 +15,37 @@
       // Note: this 404.html file must be at least 512 bytes for it to work
       // with Internet Explorer (it is currently > 512 bytes)
 
-      // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
-      // This way the code will only replace the route part and not the real folder.
-      // Otherwise, leave pathSegmentsToKeep as 0.
-      var pathSegmentsToKeep = 1;
-
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-
+      // Prevent infinite loops by checking if we're already in a redirect loop
+      var currentUrl = window.location.href;
+      var hasLoopPattern = currentUrl.includes('~and~') || currentUrl.includes('/?/');
+      
+      if (hasLoopPattern) {
+        // If we detect a loop pattern, redirect to home page
+        window.location.replace(window.location.origin + '/');
+      } else {
+        // If you're creating a Project Pages site and NOT using a custom domain,
+        // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
+        // This way the code will only replace the route part and not the real folder.
+        // Otherwise, leave pathSegmentsToKeep as 0.
+        var pathSegmentsToKeep = 1;
+        
+        var l = window.location;
+        var pathSegments = l.pathname.split('/').slice(1); // Remove empty first element
+        
+        if (pathSegments.length > pathSegmentsToKeep) {
+          var routePath = pathSegments.slice(pathSegmentsToKeep).join('/');
+          var searchQuery = l.search ? l.search.slice(1).replace(/&/g, '~and~') : '';
+          var newSearch = routePath + (searchQuery ? '&' + searchQuery : '');
+          
+          var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            '/' + pathSegments.slice(0, pathSegmentsToKeep).join('/') + '/?/' + newSearch + l.hash;
+          
+          l.replace(newUrl);
+        } else {
+          // If path is too short, redirect to home
+          l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/');
+        }
+      }
     </script>
   </head>
   <body>
